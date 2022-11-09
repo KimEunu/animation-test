@@ -1,0 +1,57 @@
+.wrapper {
+  position: absolute;
+  top: calc(50% - 14rem);
+  left: calc(50% - 3rem);
+  width: 6rem;
+  height: 6rem;
+  font-size: 2rem;
+  transform-style: preserve-3d;
+  animation: roll 6s linear infinite;
+}
+.wrapper > * {
+  /* backface-visibility: hidden; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6rem;
+  height: 6rem;
+  text-align: center;
+  line-height: 3rem;
+}
+.wrapper > *:hover {
+  background-color: white;
+}
+.textfront {
+  background-color: black;
+  transform: translateZ(3rem);
+}
+.textright {
+  background-color: black;
+  transform: rotateY(90deg) translateZ(3rem);
+}
+.textleft {
+  background-color: black;
+  transform: rotateY(-90deg) translateZ(3rem);
+}
+.textback {
+  background-color: black;
+  transform: translateZ(-3rem) scaleX(-1);
+}
+.texttop {
+  background-color: black;
+  transform: rotateX(90deg) translateZ(3rem);
+}
+.textbottom {
+  background-color: rgba(0, 0, 0, 0.95);
+  box-shadow: 0 0 10rem 10rem rgb(0, 0, 0);
+  border-radius: 50%;
+  transform: rotateX(90deg) translateZ(-6rem) scale(0.2);
+}
+@keyframes roll {
+  0% {
+    transform: rotateX(-30deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(-30deg) rotateY(-360deg);
+  }
+}

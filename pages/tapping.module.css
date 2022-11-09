@@ -1,0 +1,22 @@
+.tapping {
+  position: fixed;
+  box-sizing: border-box;
+  width: 12rem;
+  height: 12rem;
+  border-style: solid;
+  border-color: rgb(0, 255, 195);
+  border-radius: 50%;
+  animation: tap 500ms ease-out;
+}
+@keyframes tap {
+  0% {
+    opacity: 1;
+    transform: scale(0);
+    border-width: 2rem;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+    border-width: 0.03rem;
+  }
+}
