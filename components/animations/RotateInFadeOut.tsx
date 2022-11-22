@@ -11,7 +11,7 @@ export default function RotateIn() {
     return (
         <div className={isFade} >
 
-            {text.map((unilieral, index) => <span key={index} onClick={animationAdd}>{unilieral}</span>)}
+            {text.map((text, index) => <span key={index} onClick={animationAdd}>{text}</span>)}
         </div >
     )
 } 

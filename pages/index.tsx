@@ -26,6 +26,13 @@ export default function Home() {
 
   return (
     <div>
+      <Head>
+
+        <title>CSS 연습</title>
+        <meta
+          name="description"
+          content="css 키프레임과 3D연습을 위한 연습장" />
+      </Head>
       <Animations />
     </div>
   )

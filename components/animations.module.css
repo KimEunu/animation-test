@@ -2,5 +2,5 @@
   width: 100vw;
   height: 100vh;
   background-color: rgb(17, 229, 190);
+  perspective-origin: right;
 }
-
