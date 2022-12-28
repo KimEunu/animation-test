@@ -7,7 +7,9 @@ export default function TextRising() {
 
     const userInputHandler = () => {
         const textValue = userInputRef.current.value.split('')
+        console.log(textValue)
         textValue.map((t: String) => text.push(<span className={styles.text}>{t}</span>))
+        console.log(textState)
         setTextState(text)
 
     }
@@ -18,7 +20,7 @@ export default function TextRising() {
             <div className={styles['text-area']} >
                 {textState}
             </div>
-            <input ref={userInputRef} className={styles['user-input']} placeholder='Write something!' maxLength='28' onChange={userInputHandler}></input>
+            <input ref={userInputRef} className={styles['user-input']} placeholder='Write something!' maxLength={28} onChange={userInputHandler}></input>
         </div>
     )
 }
