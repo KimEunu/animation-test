@@ -1,7 +1,7 @@
 
 import styles from './animations.module.css'
-import ThreeDReactLogo from './animations/3DReactLogo'
 import ThreeDText from './animations/3DText'
+import RadioButton from './animations/RadioButton'
 import Raindrop from './animations/Raindrop'
 import RotateInFadeOut from './animations/RotateInFadeOut'
 import TextRising from './animations/textRising'
@@ -12,9 +12,10 @@ export default function animations() {
         <div className={styles['main-wrapper']}>
             <RotateInFadeOut />
             <ThreeDText />
-            <ThreeDReactLogo />
+
             <TextRising />
             <Raindrop />
+            <RadioButton />
         </div>
     )
 
